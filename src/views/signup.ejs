@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <title>
+    <%=title%>
+  </title>
+  <meta name="generator" content="Bootply" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link
+    href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css"
+    rel="stylesheet">
+  <!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/stylesignup.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <center>
+  <h1 style="color: red;"> Welcome <%=user.username%></h1>
+</center>
+  <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        Diwlai Wishes App
+        <button class="navbar-toggle" type="button" data-toggle="collapse"
+          data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+  </header>
+
+<br>
+<br>
+
+
+  <!--/stories-->
+  <h3 style="text-align: center;color: blue;">Enter The Details to Whom Wishes need to be send Up</h3>
+  <form name="myForm" method="POST" action="/add"
+  onSubmit="return validate();">
+
+
+
+    <div class="col -lg-6 col-md-6 col-sm-6 col-6">
+      <label for="inputName4" style="color:black" class="form-label">User
+        Name</label>
+      <input name="user1name" type="text" class="form-control" required id="inputName4">
+    </div>
+
+    <div class="col -lg-6 col-md-6 col-sm-6 col-6">
+      <label for="inputEmail4" style="color:black"
+        class="form-label">Email</label>
+      <input name="email" type="email" class="form-control" required id="email"
+        onkeyup="return mailvalidate();">
+      <label for="error0" id="error0"></label>
+    </div>
+
+ 
+    
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12 sub">
+      <button type="submit" class="btn btn-primary">Enter Details</button>
+    </div>
+
+
+
+  </form>
+
+  <!--/stories-->
+
+
+
+
+  </div>
+  </div>
+
+
+
+  </div>
+  <!--/col-12-->
+  </div>
+  </div>
+
+
+  <hr>
+
+  <div class="container" id="footer">
+    <div class="row">
+      <div class="col col-sm-12">
+
+        <h1>Follow Us</h1>
+        <div class="btn-group">
+          <a class="btn btn-twitter btn-lg" href="#"><i
+              class="icon-twitter icon-large"></i> Twitter</a>
+          <a class="btn btn-facebook btn-lg" href="#"><i
+              class="icon-facebook icon-large"></i> Facebook</a>
+          <a class="btn btn-google-plus btn-lg" href="#"><i
+              class="icon-google-plus icon-large"></i> Google+</a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <hr>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <ul class="list-inline">
+            <li><i class="icon-facebook icon-2x"></i></li>
+            <li><i class="icon-twitter icon-2x"></i></li>
+            <li><i class="icon-google-plus icon-2x"></i></li>
+            <li><i class="icon-pinterest icon-2x"></i></li>
+          </ul>
+
+        </div>
+        <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at
+            <a href="http://www.bootply.com">Bootply</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- script references -->
+  <script
+    src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+
+</html>
